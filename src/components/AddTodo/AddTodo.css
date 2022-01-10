@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#root{
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/12/17/11/post-it-1975179_960_720.png);
+    height: 100%;
+}
+
+.addtodo-body {
+    background-image: url(https://i.pinimg.com/originals/38/3d/6f/383d6f093d89a74751e9bdc1e3d088df.png);
+    margin: 5% 35%;
+    height: 450px;
+}
+
+#description {
+    resize:none;
+    height: 43px;
+    outline: none;
+    background-color: transparent;
+    border: 0px solid;
+    margin-top: 7px;
+}
+
+.addtodo-body form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 17px;
+}
+
+.addtodo-body form div {
+    text-align: center;
+}
+
+.addtodo-body form div label {
+    margin-bottom: 10px;
+}
+
+.description-div {
+    margin-top: 7px;
+}
+
+.date-div {
+    margin-top: 10px;
+    margin-bottom: 28.5px;
+}
+
+.addtodo-body form div input {
+    outline: none;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.submit-btn {
+    background-color: rgba(56, 125, 255, 0.877);
+}
+
+.submit-btn:hover {
+    background-color: rgba(103, 156, 255, 0.877)
+}
+
+@media all and (max-width: 500px) {
+    .addtodo-body {
+        margin: 20% 10%;
+    }
+}

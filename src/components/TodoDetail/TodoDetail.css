@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'marker-detail';
+    src: url(../../fonts/123Marker.ttf);
+}
+
+.todo-detail-div {
+    text-align: center;
+    padding-top: 1px;
+    margin-top: 50px;
+    background: url(https://i.pinimg.com/originals/38/3d/6f/383d6f093d89a74751e9bdc1e3d088df.png) no-repeat center;
+    background-size: contain;
+    height: 550px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.todo-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.todo-detail-container h3 {
+    font-family: 'marker-detail';
+    font-size: 20px;
+    word-wrap: break-word;
+    max-width: 20%;
+}
+
+button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ffffff8c;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff8f;
+}
+button:hover {
+	background-color:#f6f6f6;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+#inprogress-btn {
+    background-color: rgba(248, 191, 68, 0.877);
+}
+
+#inprogress-btn:hover {
+    background-color: rgba(253, 213, 125, 0.877);
+}
+
+#todone-btn {
+    background-color: rgba(112, 255, 46, 0.877);
+}
+
+#todone-btn:hover {
+    background-color: rgba(160, 247, 120, 0.877);
+}
+
+#remove-btn {
+    background-color: rgba(255, 43, 43, 0.877);
+}
+
+#remove-btn:hover {
+    background-color: rgba(255, 97, 97, 0.877);
+}
+/* //////////// Modal //////////// */
+
+.modal-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200,0.6);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 115px;
+}
+
+.modal-container .modal-header {
+    text-align: center;
+}
+
+.modal-container .modal-header img {
+    width: 175px;
+}
+
+.modal-container .modal-title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-container .modal-body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.modal-container .modal-footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .modal-footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-footer button a {
+    text-decoration: none;
+    color:black;
+}
+
+@media all and (max-width: 500px) {
+    .todo-detail-container {
+        min-width: 80%;
+    }
+    .todo-detail-container h3 {
+        max-width: 60%;
+        font-size: 20px;
+    }
+    .modal-container {
+        margin: 30px 20px auto 20px
+    }
+}

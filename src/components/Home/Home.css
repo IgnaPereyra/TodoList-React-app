@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'chalk-title';
+    src: url(../../fonts/Very\ Simple\ Chalk.ttf);
+}
+
+@font-face {
+    font-family: 'chalk-todo';
+    src: url(../../fonts/Chalk\ Board.ttf);
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-container li {
+    width: 25%;
+    height: 250px;
+    text-align: center;
+    margin: 135px 0;
+    list-style: none;
+    overflow-y: auto;
+    background: url(https://img.freepik.com/vector-gratis/pizarra-dos-piezas-tiza_97886-5.jpg?size=626&ext=jpg) no-repeat center;
+    background-size: contain;
+}
+
+.home-container li h2 {
+    font-family: 'chalk-title';
+    text-align: center;
+    font-weight: 450;
+    font-size: 27px;
+    margin-top: 12px;
+    color: white
+}
+
+.home-container li div a {
+    font-family: 'chalk-todo';
+    font-size: 24px;
+    text-decoration: none;
+    color: white
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media all and (max-width: 500px) {
+    .home-container {
+        display:flex;
+        flex-wrap: wrap;
+        padding-inline-start: 0;
+    }
+    .home-container li{
+        width: 100%;
+    }
+}
